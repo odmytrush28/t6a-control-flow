@@ -4,4 +4,5 @@
 
 # Print the numbers for 10 scanner checks
 for check in range(1, 11):
-    print(check)
+    minutes = check * 15
+    print(f"Check {check}: {minutes} minutes after shift start")
