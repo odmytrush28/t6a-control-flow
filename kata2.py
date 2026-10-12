@@ -8,6 +8,13 @@
 
 # Expected: Day 3: Cycle count, Day 5: Scanner audit, Day 15: FULL AUDIT, Day 30: FULL AUDIT
 
-# Loop through all 30 days of the month
+# Check warehouse operations for 30 days
 for day in range(1, 31):
-    print(day)
+    if day % 3 == 0 and day % 5 == 0:
+        print(f"Day {day}: FULL AUDIT")
+    elif day % 3 == 0:
+        print(f"Day {day}: Cycle count")
+    elif day % 5 == 0:
+        print(f"Day {day}: Scanner audit")
+    else:
+        print(f"Day {day}: Normal operations")
