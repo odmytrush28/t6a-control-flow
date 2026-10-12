@@ -7,3 +7,7 @@
 # Any other day → Normal operations
 
 # Expected: Day 3: Cycle count, Day 5: Scanner audit, Day 15: FULL AUDIT, Day 30: FULL AUDIT
+
+# Loop through all 30 days of the month
+for day in range(1, 31):
+    print(day)
